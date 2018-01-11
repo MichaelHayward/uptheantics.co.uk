@@ -1,0 +1,136 @@
+html{
+	font-family:Lato;
+	background-image:url('who-we-are-background.jpg');
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-color:#1c1c1c;
+	color:#efefef;
+}
+body{
+	margin:0;
+	animation:fadeUpIn 1.5s 1 forwards;
+}
+footer{
+	background-color:#101010;
+	padding-top:30px;
+	vertical-align:middle;
+	text-align:center;
+}
+footer a{
+	padding:10px;
+	transition:0.1s;
+	display:inline-block;
+	color:#F15946;
+	text-decoration:none;
+}
+footer a:hover{
+	color:#efefef;
+}
+q{
+	display:inline-block;
+	font-size:150%;
+}
+.quoteParagraph{
+	margin-top:100px;
+	margin-bottom:100px;
+}
+#groupDescription{
+	background-color:rgba(0,0,0,0.5);
+	padding:20px;
+	box-sizing:border-box;
+}
+#groupDescription h1{
+	margin-top:0;
+	padding-top:10px;
+}
+#groupDescription p{
+	max-width:40%;
+	line-height:150%;
+}
+#toHomeIcon img{
+	width:125px;
+	height:125px;
+	transition:0.25s;
+}
+#toHomeIcon img:hover{
+	transform:rotate(-160deg);
+	transition:0.25s;
+}
+#currentPageLink{
+	color:#efefef;
+}
+#who-we-are{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+.member-tile{
+	width:320px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.member-portrait{
+	width:100%;
+	height:auto;
+	border-radius:5px;
+	margin:auto;
+}
+button.accordion{
+	background-color:#F15946;
+	color:#444;
+	cursor:pointer;
+	padding:18px;
+	width:100%;
+	text-align:center;
+	border:2px solid #F15946;
+	border-radius:5px;
+	outline:none;
+	transition:0.4s;
+	color:#efefef;
+}
+.accordion:hover{
+	background-color:rgba(0,0,0,0.25);
+}
+.memberBio{
+	display:none;
+	transition:1s ease-in-out;
+	overflow:hidden;
+	text-shadow:0px 0px 2px black;
+	text-align:justify;
+	padding:10px;
+	background-color:rgba(0,0,0,0.5);
+}
+#contactWrapper{
+	display:inline-block;
+	padding-bottom:30px;
+}
+@keyframes fadeUpIn{
+	0%   {opacity:0;transform:translateY(50px);}
+	100% {opacity:1;transform:translateY(0px) ;}
+}
+@media(orientation: portrait){
+	.member-tile{
+		margin:auto;
+		margin-bottom:20%;
+		width:80%;
+		max-width:320px;
+	}
+	.member-portrait{
+		width:100%;
+		height:auto;
+		margin:auto;
+		display:block;
+	}
+	.memberBio{
+		text-align:left;
+	}
+	#groupDescription p{
+		max-width:initial;
+	}
+}
