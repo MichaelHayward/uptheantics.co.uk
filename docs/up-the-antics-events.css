@@ -94,10 +94,10 @@ button:focus{
 	transition:0.5s;
 }
 
-.eventsTile img{
+/*.eventsTile img{
 	width:auto;
 	height:100%
-}
+}*/
 .eventsTileHero{
 	height:350px;
 	overflow:hidden;
