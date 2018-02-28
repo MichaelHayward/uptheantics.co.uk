@@ -99,7 +99,6 @@ button:focus{
 	height:100%
 }*/
 .eventsTileHero{
-	height:350px;
 	overflow:hidden;
 	flex-shrink:3;
 }
